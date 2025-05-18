@@ -17,8 +17,8 @@ images.bg1.src = "images/beach.jpg";
 images.bg2.src = "images/forest.jpg";
 images.bg3.src = "images/city.jpg";
 images.character.src = "images/character.png";
-images.tree.src = "images/tree.png";
-images.ball.src = "images/ball.png";
+images.tree.src = "images/tree.jpg";
+images.ball.src = "images/ball.jpg";
 images.sun.src = "images/sun.png";
 
 function drawScene() {
