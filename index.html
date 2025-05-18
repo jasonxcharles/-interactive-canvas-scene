@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Canvas Scene</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>Interactive Canvas Scene with Forms</h1>
+
+  <div class="controls">
+    <div class="group">
+      <strong>Select Background:</strong><br />
+      <label><input type="radio" name="bg" value="bg1" checked> Beach</label>
+      <label><input type="radio" name="bg" value="bg2"> Forest</label>
+      <label><input type="radio" name="bg" value="bg3"> City</label>
+    </div>
+
+    <div class="group">
+      <label><strong>Move Character (X Position):</strong></label><br />
+      <input type="range" id="slider" min="50" max="550" value="100">
+    </div>
+
+    <div class="group">
+      <strong>Toggle Items:</strong><br />
+      <label><input type="checkbox" id="item1"> Show Tree</label>
+      <label><input type="checkbox" id="item2"> Show Ball</label>
+      <label><input type="checkbox" id="item3"> Show Sun</label>
+    </div>
+
+    <div class="group">
+      <strong>Play Sound:</strong><br />
+      <button onclick="playSound('sfx1')">Sound 1</button>
+      <button onclick="playSound('sfx2')">Sound 2</button>
+      <button onclick="playSound('sfx3')">Sound 3</button>
+    </div>
+  </div>
+
+  <canvas id="sceneCanvas" width="600" height="400"></canvas>
+
+  <audio id="sfx1" src="sounds/sound1.mp3"></audio>
+  <audio id="sfx2" src="sounds/sound2.mp3"></audio>
+  <audio id="sfx3" src="sounds/sound3.mp3"></audio>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
